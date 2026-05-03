@@ -1,0 +1,66 @@
+{
+  "model": {
+    "num_layers": 3,
+    "num_filters_first": 8,
+    "kernel_size": 5,
+    "pool_type": "max"
+  },
+  "training": {
+    "seed": 42,
+    "batch_size": 64,
+    "max_epochs": 50,
+    "learning_rate": 0.001,
+    "val_fraction": 0.15,
+    "test_fraction": 0.15,
+    "early_stop_patience": 10,
+    "lr_reduce_patience": 5,
+    "lr_reduce_factor": 0.5
+  },
+  "best_val_acc": 0.9994366197183099,
+  "test_acc": 0.9994369369369369,
+  "test_f1_macro": 0.9994138303062788,
+  "confusion_matrix": [
+    [
+      497,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      426,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      425,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      427
+    ]
+  ],
+  "epochs_run": 23,
+  "train_time_s": 7.896124362945557,
+  "model_info": {
+    "num_layers": 3,
+    "num_filters_first": 8,
+    "kernel_size": 5,
+    "pool_type": "max",
+    "num_params": 19684,
+    "weight_bytes_fp32": 78736,
+    "macs_per_inference": 1040384,
+    "final_channels": 32,
+    "final_length": 128,
+    "flat_dim": 4096
+  },
+  "n_train": 8283,
+  "n_val": 1775,
+  "n_test": 1776,
+  "device": "cuda"
+}

@@ -1,0 +1,19 @@
+model:
+  num_layers: 3
+  num_filters_first: 8
+  kernel_size: 5
+  pool_type: max
+
+training:
+  seed: 42
+  batch_size: 64
+  max_epochs: 50
+  learning_rate: 0.001
+  val_fraction: 0.15
+  test_fraction: 0.15
+  early_stop_patience: 10
+  lr_reduce_patience: 5
+  lr_reduce_factor: 0.5
+
+data:
+  data_dir: ../data/raw

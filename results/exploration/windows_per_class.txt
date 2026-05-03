@@ -1,0 +1,17 @@
+total de janelas: 11834
+total de arquivos: 40
+window size: 1024, sampling: 12000 Hz
+duracao por janela: 85.33 ms
+
+janelas por classe:
+  0 (normal      ):   3312  (27.99%)
+  1 (inner_race  ):   2838  (23.98%)
+  2 (ball        ):   2840  (24.00%)
+  3 (outer_race  ):   2844  (24.03%)
+
+janelas por classe x carga (hp):
+  classe        | 0 hp | 1 hp | 2 hp | 3 hp
+  normal        |  475 |  944 |  946 |  947
+  inner_race    |  708 |  709 |  709 |  712
+  ball          |  711 |  709 |  710 |  710
+  outer_race    |  711 |  712 |  709 |  712

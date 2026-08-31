@@ -1,0 +1,19 @@
+
+mainmenu "PetaLinux System Configuration"
+config SUBSYSTEM_TYPE_LINUX
+        bool
+        default y
+        select SYSTEM_ZYNQ
+
+config SYSTEM_ZYNQ
+        bool "ZYNQ Configuration"
+        help
+          ZYNQ Configuration for the project.
+          All these config options will be in /home/caiocv/projects/cnn_cwru_accel/petalinux/cnn_soc/project-spec/configs/config
+
+config SUBSYSTEM_DISTRO_PETALINUX
+        bool
+        default y
+        help
+
+source /home/caiocv/projects/cnn_cwru_accel/petalinux/cnn_soc/project-spec/configs/configs/Kconfig.main

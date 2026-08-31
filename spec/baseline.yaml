@@ -1,0 +1,21 @@
+# especificacao base da rede e do treino
+
+model:
+  num_layers: 3
+  num_filters_first: 8
+  kernel_size: 5
+  pool_type: max
+  # escolha por custo: mesmo DSP e mesmo II que a cabeca achatada, com 3428
+  # pesos contra 19684 e nenhuma BRAM na densa. Em acuracia sao indistinguiveis.
+  head: gap
+
+training:
+  seed: 42
+  batchnorm: true
+  balanceamento: amostrador
+  mixup_alpha: 0.2
+  aug_shift: 0.5
+  label_smoothing: 0.1
+
+data:
+  data_dir: data/full

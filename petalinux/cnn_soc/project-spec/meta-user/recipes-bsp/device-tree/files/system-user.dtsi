@@ -1,0 +1,17 @@
+// reserva a area de memoria que o dma le
+
+/include/ "system-conf.dtsi"
+
+/ {
+
+	reserved-memory {
+		#address-cells = <1>;
+		#size-cells = <1>;
+		ranges;
+
+		buffer_dma: buffer@1ff00000 {
+			no-map;
+			reg = <0x1ff00000 0x00100000>;
+		};
+	};
+};

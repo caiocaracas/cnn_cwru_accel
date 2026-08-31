@@ -1,0 +1,48 @@
+# Versionado: codigo, referencias e relatorio. Modelo e medida sao regeneraveis
+# pelo fluxo e nao entram no historico.
+
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/
+
+data/
+results/
+runs/
+
+# manuais do fornecedor: 117 MB, baixaveis do site da AMD. Remova a linha para
+# versiona-los junto.
+doc/amd/
+
+# saida gerada pelo fluxo
+ps/pesos.h
+
+# intermediarios do LaTeX; o PDF do relatorio e' versionado
+*.aux
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# lixo do Vivado no diretorio de trabalho
+NA/
+clockInfo.txt
+*.jou
+*.log
+.Xil/
+
+# Petalinux - artefatos de compilacao e cache
+petalinux/cnn_soc/build/
+petalinux/cnn_soc/images/
+petalinux/cnn_soc/downloads/
+petalinux/cnn_soc/sstate-cache/
+petalinux/cnn_soc/components/
+petalinux/cnn_soc/.petalinux/
+*.osmeta
